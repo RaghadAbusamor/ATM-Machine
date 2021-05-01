@@ -3,29 +3,41 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package atm;
+package ATM;
 
 /**
  *
- * @author HP
+ * @author apauser
  */
 public class Card {
-    private int PIN ;
-
     
-    public Card() {
-       
+    private String no;
+    private String name;
+
+    public Card(String no, String name) {
+        this.no = no;
+        this.name = name;
     }
 
-    public int getPIN() {
-        return PIN;
+    public String getNo() {
+        return no;
     }
 
-    public void setPIN(int PIN) {
-        this.PIN = PIN;
+    public void setNo(String no) {
+        this.no = no;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
     
     
     
     
 }
+

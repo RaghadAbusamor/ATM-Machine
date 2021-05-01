@@ -19,13 +19,10 @@ public class MAIN {
    
     public static void main(String[] args) {
         
-     System.out.println(" please Enter the card in cardreder ");
-     Bank bank=new Bank();
-     Cardreader card_reader= new Cardreader();
-     CashDispenser cash_dispenser=new CashDispenser();
-     ConsoleScreen console_screen=new ConsoleScreen();
-
-        
+    MyLogger mylogger = new MyLogger();
+    Atm atm = new Atm(mylogger);
+    
+    atm.start();
   
      
      

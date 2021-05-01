@@ -3,20 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ATM;
+package atm;
 
 /**
  *
- * @author apauser
+ * @author HP
  */
-public class Cardreader {
+public class Log {
+   public  interface Logger {
     
-    private Card card;
+    public abstract void log(String message);
+}
     
-    public void readCard(Card card){
-        this.card = card; 
-    }
-    
-    
- 
 }

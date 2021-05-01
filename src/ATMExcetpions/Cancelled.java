@@ -3,20 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ATM;
+package ATMExcetpions;
 
 /**
  *
- * @author apauser
+ * @author HP
  */
-public class Cardreader {
+public class Cancelled extends Exception{
     
-    private Card card;
-    
-    public void readCard(Card card){
-        this.card = card; 
-    }
-    
-    
- 
+    public void  Cancelled(){
+   System.out.println("exit");            
+   System.exit(0);
+   
+}
 }

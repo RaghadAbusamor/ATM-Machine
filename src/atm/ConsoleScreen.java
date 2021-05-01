@@ -3,42 +3,43 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package atm;
+package ATM;
 
+import ATMExcetpions.Cancelled;
+import atm.InvalidPIN;
 import java.util.Scanner;
 
 /**
  *
- * @author HP
+ * @author apauser
  */
 public class ConsoleScreen {
-  
-    public int enterPIN()
-    {  
-     Scanner input = new Scanner(System.in);
-     System.out.println(" enter 4 digit PIN number ");
-     int pin= input.nextInt();
+    
+    public void display(String message){
+        System.out.println(message);  
+        
+    }
+    public int readPIN() throws  InvalidPIN{
+        
+       Scanner input = new Scanner(System.in);
+       int pin  ;
+       pin = input.nextInt();
+        if( pin>=1000 && pin<10000)
         return pin;
-
+        else 
+         
+        throw new InvalidPIN();
+        
     }
     
+    public int readMenuChoice(String prompt, String[] menu)throws Cancelled{
+        return 0;
+    }
     
-      public void menu(){
-          
-          System.out.println("   choose 1. Withdraw\n" + "2. Balance inquiry "+  "3. Cancle");
-     Scanner input =new Scanner(System.in);
-     int x =input.nextInt();
-     switch(x){
-         case 1: 
-          break;
-         case 2:
-          break;
-         case 3:
-             System.out.println( );
-         
-     }  }
+    public int readAmount(String prompt) throws Cancelled{
+        return 0;
+    }
+
     
-      public void display_balance(){
-          
-      }
 }
+    

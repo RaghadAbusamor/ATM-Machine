@@ -3,49 +3,37 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package atm;
+package ATM;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  *
- * @author HP
+ * @author apauser
  */
 public class Bank {
     
-     ArrayList<BankAccount> bank_account = new ArrayList<BankAccount>();
-     
-     public void add(BankAccount BA )
-     {
-        bank_account.add(BA);
-     }
-     
-     public BankAccount search(int pin)
-     {
-         
-         for (int i=0 ;i<bank_account.size();i++){
-             if(bank_account.get(i).getCard().getPIN() == pin) {
-             return bank_account.get(i);}
-        
-                 }
-         return bank_account.get(-1);
-     }
-     public void withdraw (BankAccount BA){
-         
-          System.out.println("How much would you like to withdraw fro your account?");
-          Scanner input =new Scanner(System.in);
-          int amount =input.nextInt();
-			
-			if( BA.getBalance() > amount ){
-				 BA.setBalance(BA.getBalance() - amount);
-			}else{
-                         System.out.println("\"Sorry, Insufficient Funds!\"");
-			}
-     }
-   
-     
-    public Double Balance_inquiry(BankAccount BA){
-        return BA.getBalance();
+    private String name;
+    ArrayList<BankAccount> clients;
+    
+    public Bank(){
+        this.clients = new ArrayList<>();
+        this.clients.add(new BankAccount("2222", "Ahmed", 4000, 1234));
+        this.clients.add(new BankAccount("3333", "Ali", 5000, 1222));
+        this.clients.add(new BankAccount("4444", "Mohammed", 10000, 4422));
     }
+    
+    public BankAccount getBankAccountByNo(String no) throws AccountNotFoundException{
+        for(BankAccount b: this.clients){
+            if (no.equals(b.getAccountNo())){
+                return b;
+            }
+        }
+        throw new AccountNotFoundException();
+    }
+    
+    
+    
+    
+    
 }
