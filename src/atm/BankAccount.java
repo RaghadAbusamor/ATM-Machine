@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ATM;
-
+package atm;
+import ATMExcetpions.InsufficientBalanceException;
+import ATMExcetpions.Cancelled;
+import javax.swing.JOptionPane;
 
 /**
  *
- * @author apauser
+ * @author raghad , ayat
  */
 public class BankAccount {
     
@@ -16,6 +18,8 @@ public class BankAccount {
     private String clientName;
     private double balance;
     private int PIN;
+  
+   
 
     public BankAccount(String accountNo, String clientName, double balance, int PIN) {
         this.accountNo = accountNo;
@@ -25,15 +29,17 @@ public class BankAccount {
     }
     
     public void withdraw(double amount) throws InsufficientBalanceException{
-        if (amount <= this.balance){
-            this.balance -= amount;
-        }
-        else{
-            
+
+        if (amount > this.balance){
             throw new InsufficientBalanceException();
         }
+        else {
+            this.balance -= amount;
+        }
     }
-
+    public void Balance_inquiry(){
+        JOptionPane.showMessageDialog(null, " the balance for "+this.getAccountNo()+ " Account is :" + this.getBalance()+" NIS");
+    }
     public String getAccountNo() {
         return accountNo;
     }

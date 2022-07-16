@@ -7,12 +7,12 @@ package atm;
 
 /**
  *
- * @author HP
+ * @author raghad & ayat
  */
-public class Log {
-   public  interface Logger {
+
+   public  interface Log {
     
     public abstract void log(String message);
 }
     
-}
+

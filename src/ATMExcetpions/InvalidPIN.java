@@ -9,11 +9,10 @@ package ATMExcetpions;
  *
  * @author raghad & ayat
  */
-public class Cancelled extends Exception{
+public class InvalidPIN extends Exception{
     
-    public void  Cancelled(){
-   System.out.println("exit");            
-   System.exit(0);
-   
-}
+    public String Invalidpin(){
+        return "Invalid  PIN";
+    }
+    
 }

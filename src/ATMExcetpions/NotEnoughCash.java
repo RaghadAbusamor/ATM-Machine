@@ -9,11 +9,10 @@ package ATMExcetpions;
  *
  * @author raghad & ayat
  */
-public class Cancelled extends Exception{
+public class NotEnoughCash extends Exception  {
     
-    public void  Cancelled(){
-   System.out.println("exit");            
-   System.exit(0);
-   
-}
+    public String NotEnoughCash() {
+       return "Not Enough Cash";
+    }
+    
 }

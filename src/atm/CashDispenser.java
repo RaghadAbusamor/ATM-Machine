@@ -3,41 +3,40 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ATM;
+package atm;
+import ATMExcetpions.NotEnoughCash;
 
 /**
  *
- * @author apauser
+ * @author raghad , ayat
  */
 public class CashDispenser {
     
-    private int cashOnHand;
+    private int cashOnHand=10000;
     private Log log;
-    
-    public CashDispenser(Log log){
+   public CashDispenser(Log log){
        this.log = log;
-    }
+   }
     public void setInitialCash(int initialCash){
     this.cashOnHand = initialCash;
     }
     
-    public boolean checkCashOnHand(int amount){
-         if (this.cashOnHand>= amount){
+    public boolean checkCashOnHand(double amount){
+         if (this.cashOnHand >= amount){
             return true;
         }
         else{
              return false;
         }
-    
     }
     
     public void dispenseCash(int amount)throws NotEnoughCash{
-       if (checkCashOnHand(amount)){
+       if (this.checkCashOnHand(amount)){
         this.cashOnHand -= amount;
-        this.log.log("client has withdrawn succesfully from cash dispenser");
+       log.log("client has withdrawn succesfully from cash dispenser");
         }
         else{
-            throw new NotEnoughCash("Sorry, insufficient cash in dispenser");
+            throw new NotEnoughCash();
         } 
        
     }

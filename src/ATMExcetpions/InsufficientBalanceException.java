@@ -9,11 +9,10 @@ package ATMExcetpions;
  *
  * @author raghad & ayat
  */
-public class Cancelled extends Exception{
+public class InsufficientBalanceException extends Exception {
+      @Override
+      public String getMessage() {
+        return "Insufficient Balance";
+    } 
     
-    public void  Cancelled(){
-   System.out.println("exit");            
-   System.exit(0);
-   
-}
 }

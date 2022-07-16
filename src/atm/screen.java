@@ -3,17 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ATMExcetpions;
+package atm;
 
 /**
  *
  * @author raghad & ayat
  */
-public class Cancelled extends Exception{
+public class screen implements Log{
+
+    @Override
+    public void log(String message) {
+        System.out.println(message);
+        
+    }
+
+ 
     
-    public void  Cancelled(){
-   System.out.println("exit");            
-   System.exit(0);
-   
-}
 }

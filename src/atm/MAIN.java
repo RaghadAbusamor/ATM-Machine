@@ -5,30 +5,36 @@
  */
 package atm;
 
-import java.util.ArrayList;
+
+import ATMExcetpions.AccountNotFoundException;
+import ATMExcetpions.Cancelled;
+import ATMExcetpions.InsufficientBalanceException;
+import ATMExcetpions.InvalidPIN;
+import ATMExcetpions.NotEnoughCash;
+import atm.screen;
+import atm.MyLogger;
+
+
+
 
 
 /**
  *
- * @author HP
+ * @author raghad , ayat 
  */
 public class MAIN {
-     
+
+  
+    public static void main(String[] args) throws Cancelled, InvalidPIN, AccountNotFoundException, InsufficientBalanceException, NotEnoughCash {  
     
+    MyLogger mylogger =new MyLogger();
+    Atm atmm = new Atm(mylogger);
+    atmm.start();
+ 
+    }
 
    
-    public static void main(String[] args) {
-        
-    MyLogger mylogger = new MyLogger();
-    Atm atm = new Atm(mylogger);
-    
-    atm.start();
-  
-     
-     
-     
-    }
  
 }
-    
+  
 

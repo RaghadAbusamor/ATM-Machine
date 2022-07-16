@@ -1,0 +1,58 @@
+2021-05-22T04:11:18.392------------	**********************************************************
+
+2021-05-22T04:11:18.405------------	ATM Started
+
+2021-05-22T04:11:18.567------------	Card Number And Name Are Inserted
+
+2021-05-22T04:11:36.700------------	Clint Name is aji & His Number is 5555
+
+2021-05-22T04:11:41.100------------	***Account Not Found 
+
+2021-05-22T04:11:46.660------------	Clint Name is ahmed & His Number is 2222
+
+2021-05-22T04:11:46.661------------	Card Reader Is Active
+
+2021-05-22T04:11:46.661------------	 The PIN Has Been Read 
+
+2021-05-22T04:11:59.602------------	 The PIN You Entered IS Invalid 
+
+2021-05-22T04:11:59.603------------	 The PIN Has Been Read 
+
+2021-05-22T04:12:03.677------------	 The PIN You Entered IS Invalid 
+
+2021-05-22T04:12:03.680------------	 The PIN Has Been Read 
+
+2021-05-22T04:12:12.100------------	  All Attempts Have Been Consumed 
+
+2021-05-22T04:12:15.212------------	Clint Name is ahmed & His Number is 2222
+
+2021-05-22T04:12:15.212------------	Card Reader Is Active
+
+2021-05-22T04:12:15.212------------	 The PIN Has Been Read 
+
+2021-05-22T04:12:20.547------------	 The PIN Has Been Recognized 
+
+2021-05-22T04:12:44.012------------	 Balance Inquiry option has been approved 
+
+2021-05-22T04:12:44.716------------	 Withdraw option has been approved 
+
+2021-05-22T04:13:15.917------------	 you have withdraw 400 NIS 
+
+2021-05-22T04:13:16.739------------	 Withdrawal process has been cancelled 
+
+2021-05-22T04:13:22.492------------	 Balance Inquiry option has been approved 
+
+2021-05-22T04:13:23.179------------	 Withdraw option has been approved 
+
+2021-05-22T04:13:56.484------------	 Withdraw option has been approved 
+
+2021-05-22T04:14:05.691------------	 you have withdraw 250 NIS
+
+2021-05-22T04:14:06.515------------	 Withdrawal process has been cancelled 
+
+2021-05-22T04:14:09.530------------	 Balance Inquiry option has been approved 
+
+2021-05-22T04:14:13.803------------	 YOUR OPERATION CANCELD 
+
+2021-05-22T04:14:16.004------------	 The Process Is Complitly Canceled , THANK YOU!
+
